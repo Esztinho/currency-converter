@@ -34,7 +34,8 @@
 
         <?php
 
-$api_key = '7bee7616c098ea15ee886e6b70343b3a';  
+$config = include('config.php');
+$apiKey = $config['api_key'];
 
 
 $api_url = 'http://data.fixer.io/api/latest?access_key=' . $api_key . '&symbols=USD,EUR,HUF';
