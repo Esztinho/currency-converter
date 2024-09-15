@@ -1,0 +1,81 @@
+/* alapértelmezett stílusok */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #415a55;
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    
+    
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 50vh; /* A kép magassága, fele a viewport magasságának */
+    background: url('currency_convert_bg.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* A háttér képet a többi elem mögött tartja */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4f224d;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    text-align: center;
+}
